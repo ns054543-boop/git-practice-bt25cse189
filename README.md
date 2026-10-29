@@ -63,8 +63,4 @@ The resolved file was committed, and the repository history was checked.
 
 - **Repository:** [git-practice-bt25cse189](https://github.com/ns054543-boop/git-practice-bt25cse189)
 - **Issue:** [Organize and verify Git practice assignment #1](https://github.com/ns054543-boop/git-practice-bt25cse189/issues/1)
-- **Pull Request:** To be added after creation.
-
-## Repository Notes
-
-This repository is being organized from previously completed Git practical work. Additional exercise records and GitHub activity links will be included when available.
+- **Pull Request:** [Link assignment tracking issue in README #2](https://github.com/ns054543-boop/git-practice-bt25cse189/pull/2)
