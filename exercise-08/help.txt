@@ -1,0 +1,5 @@
+MENU HELP
+1. Greet user: Enter your name to receive a greeting.
+2. Add two integers: Enter two numbers to calculate their sum.
+3. Check even or odd: Enter an integer to check its parity.
+4. Exit: Quit the menu.
