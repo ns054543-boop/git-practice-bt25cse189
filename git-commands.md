@@ -6,7 +6,7 @@
 |---|---|
 | `git --version` | Check the installed Git version. |
 | `git config --global user.name "Nitin Saini"` | Configure the Git author name. |
-| `git config --global user.email "YOUR_EMAIL"` | Configure the Git author email. |
+| `git config --global user.email "your-email@example.com"` | Configure the Git author email. |
 | `git init -b main` | Initialize a repository with the `main` branch. |
 | `git status` | Check the repository status. |
 
@@ -55,44 +55,21 @@
 | `git stash` | Temporarily save uncommitted tracked changes. |
 | `git stash pop` | Restore the most recently stashed changes. |
 
-## 6. Merge Conflict Resolution
+## 6. Merge Conflict Commands
 
-A merge conflict occurs when Git cannot automatically combine competing changes, such as when two branches modify the same part of a file.
+| Command | Purpose |
+|---|---|
+| `git status` | Identify files with merge conflicts. |
+| `git diff` | Inspect changes while resolving conflicts. |
+| `git add filename` | Mark a conflicted file as resolved after editing it. |
+| `git commit -m "Resolve merge conflict"` | Commit the resolution when required. |
+| `git log --oneline --graph --all` | Inspect the resulting branch and commit history. |
 
-During the previous Git practical, conflicting changes were made to the lab-mode content on separate branches. The conflicting versions were inspected, and the intended final content was selected:
+## 7. Remote Synchronization Commands
 
-`Lab mode: hybrid`
-
-The resolved file was saved, the merge was completed, and the resulting commit history was inspected.
-
-### General conflict-resolution procedure
-
-1. Run `git status` to identify conflicted files.
-2. Open each conflicted file and inspect the conflict markers.
-3. Choose or combine the intended content and remove the conflict markers.
-4. Stage the resolved file using `git add filename`.
-5. Complete the merge with a commit if Git has not completed it automatically.
-6. Verify the result using `git status` and `git log --oneline --all`.
-
-## 7. Remote Synchronization Challenge
-
-In the previous two-clone practical, separate commits were created in two local clones. A push from one clone was rejected because the remote branch contained commits that were not present locally.
-
-The remote updates were fetched, the remote history was inspected, and the histories were merged before pushing the integrated result.
-
-Commands used for this workflow included:
-
-```bash
-git fetch origin
-git log --oneline --graph --all
-git merge origin/main
-git push
-```
-
-## 8. Current Assignment Repository
-
-The assignment repository is:
-
-https://github.com/ns054543-boop/git-practice-bt25cse189
-
-The practical files, README, and Git command record are maintained in this repository. GitHub Issues and Pull Requests are documented in the README after their actual URLs are available.
+| Command | Purpose |
+|---|---|
+| `git fetch origin` | Retrieve updates from the remote repository. |
+| `git log --oneline --graph --all` | Compare local and remote commit histories. |
+| `git merge origin/main` | Merge the remote `main` branch into the current branch. |
+| `git push` | Upload local commits to the remote repository. |
